@@ -1,26 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
 import React from 'react';
+import MemeGenerator from './MemeGenerator.js';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-
-        <h1>
-           Meme generator
-        </h1>
-        <h2> Have fun ! </h2>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="App">
+        <header className="App-header">
+          {/* Header display only elements*/}
+          <h1>Meme generator</h1>
+          <h2> Have fun ! </h2>
+        </header>
+      </div>
+      <div className="MemeGenerator">
+        <MemeGenerator />
+      </div>
+    </>
   );
 }
 
